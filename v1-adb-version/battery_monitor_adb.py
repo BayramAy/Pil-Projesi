@@ -9,7 +9,7 @@ WATCH_WIFI_IP = ""
 PHONE_WIFI_IP = ""  # <--- Kablosuz ADB veya donanım kimliğini yaz
 
 # SORGU PERİYODU (SANİYE CİNSİNDEN)
-BEKLEME_SURESI = 15 
+Waiting_time = 15 
 
 def get_phone_battery():
     try:
@@ -27,12 +27,12 @@ def get_phone_battery():
 
         wireless_power = re.search(r"Wireless powered:\s*true", output, re.IGNORECASE)
         
-        sarjda_mi = "Pilde"
+        charge = "Pilde"
         if (match_status and match_status.group(1) == "2")or wireless_power:
-            sarjda_mi = "Şarj Oluyor"
+            charge = "Şarj Oluyor"
             
         if match_level:
-            return f"%{match_level.group(1)} [{sarjda_mi}]"
+            return f"%{match_level.group(1)} [{charge}]"
             
         # --- C Planı (Eğer dumpsys bir anlık kaçarsa eski logcat yöntemini dene) ---
         cmd_log = f"adb -s {PHONE_WIFI_IP} logcat -d -v brief *:E *:I"
@@ -49,17 +49,17 @@ def get_phone_battery():
     return "Veri bekleniyor..."
 
 def get_laptop_battery():
-    """Laptop batarya yüzdesini ve şarj durumunu çeker."""
-    batarya = psutil.sensors_battery() 
-    if batarya is None: 
-        return "Batarya bulunamadı"
+    #"""Laptop batarya yüzdesini ve şarj durumunu çeker."""
+    battery = psutil.sensors_battery() 
+    if battery is None: 
+        return "battery bulunamadı"
     
-    yuzde = batarya.percent
-    sarjda_mi = "Şarj Oluyor" if batarya.power_plugged else "Pilde"
-    return f"%{yuzde} [{sarjda_mi}]"
+    percent = battery.percent
+    charge = "Şarj Oluyor" if battery.power_plugged else "Pilde"
+    return f"%{percent} [{charge}]"
 
 def get_watch_battery():
-    """Saate Wi-Fi üzerinden anlık dumpsys sorgusu atar."""
+    #"""Saate Wi-Fi üzerinden anlık dumpsys sorgusu atar."""
     cmd = f"adb -s {WATCH_WIFI_IP} shell dumpsys battery"
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True, errors='ignore')
     
@@ -69,7 +69,7 @@ def get_watch_battery():
     return None
 
 def clear_terminal():
-    """Terminal ekranını temizleyerek verilerin sabit kalmasını sağlar."""
+    #"""Terminal ekranını temizleyerek verilerin sabit kalmasını sağlar."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def start_periodic_monitor():
@@ -82,7 +82,7 @@ def start_periodic_monitor():
     
     try:
         while True:
-            watch_level = get_watch_battery()
+            watch_info = get_watch_battery()
             laptop_info = get_laptop_battery()
             phone_info = get_phone_battery()
             
@@ -93,8 +93,8 @@ def start_periodic_monitor():
             print("==================================================")
             
             # 1. Saat Satırı
-            if watch_level:
-                print(f"⌚ Galaxy Watch7      : %{watch_level}")
+            if watch_info:
+                print(f"⌚ Galaxy Watch7      : %{watch_info}")
             else:
                 print("⌚ Galaxy Watch7      : ❌ Bağlantı Koptu! (Yeniden deneniyor...)")
                 subprocess.run(f"adb connect {WATCH_WIFI_IP}", shell=True, stdout=subprocess.DEVNULL)
@@ -106,11 +106,11 @@ def start_periodic_monitor():
             print(f"💻 Laptop Bataryası   : {laptop_info}")
             
             print("==================================================")
-            print(f"🔄 Döngü Süresi: {BEKLEME_SURESI} sn | Son Güncelleme: {time.strftime('%H:%M:%S')}")
+            print(f"🔄 Döngü Süresi: {Waiting_time} sn | Son Güncelleme: {time.strftime('%H:%M:%S')}")
             print("🛑 Durdurmak için: Ctrl + C")
             print("==================================================")
             
-            time.sleep(BEKLEME_SURESI)
+            time.sleep(Waiting_time)
             
     except KeyboardInterrupt:
         print("\n Periyodik izleme sonlandırıldı. Panel kapatılıyor.")
