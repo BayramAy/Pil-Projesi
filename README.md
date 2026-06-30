@@ -35,3 +35,7 @@ Sistemi tamamen kablosuz, arka planda bağımsız çalışan ve daha kararlı bi
 2. Gerekli Python kütüphanesini yükleyin:
    ```bash
    pip install psutil
+3. battery_monitor_adb.py dosyasını açarak WATCH_WIFI_IP ve PHONE_WIFI_IP değişkenlerine kendi cihazlarınızın IP adreslerini yazın.
+4. Projeyi çalıştırın:python battery_monitor_adb.py
+    Geliştirici
+   Bayram Ay- Elektronik-Elektrik Mühendisliği Öğrencisi
