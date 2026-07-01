@@ -37,5 +37,11 @@ Sistemi tamamen kablosuz, arka planda bağımsız çalışan ve daha kararlı bi
    pip install psutil
 3. battery_monitor_adb.py dosyasını açarak WATCH_WIFI_IP ve PHONE_WIFI_IP değişkenlerine kendi cihazlarınızın IP adreslerini yazın.
 4. Projeyi çalıştırın:python battery_monitor_adb.py
-    Geliştirici
+
+   Geliştirici
    Bayram Ay- Elektronik-Elektrik Mühendisliği Öğrencisi
+## Katkıda Bulunanlar
+
+| [<img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v2.svg" width="100px;"/><br /><sub><b>Gemini</b></sub>](https://gemini.google.com/) |
+| :---: |
+| 🤖 (Yapay Zeka Yardımı) |
