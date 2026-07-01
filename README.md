@@ -50,4 +50,4 @@ Bu proje aşağıdaki teknolojiler ve araçlar yardımıyla geliştirilmiştir:
 
 <br>
 [![Built with Gemini](https://img.shields.io/badge/Built%20with-Gemini-blue?style=for-the-badge&logo=google-gemini)](https://gemini.google.com/)
-
+[![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-D97757?style=for-the-badge)](https://claude.ai/)
