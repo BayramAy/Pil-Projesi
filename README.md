@@ -44,4 +44,6 @@ Sistemi tamamen kablosuz, arka planda bağımsız çalışan ve daha kararlı bi
 
 | [<img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v2.svg" width="100px;"/><br /><sub><b>Gemini</b></sub>](https://gemini.google.com/) |
 | :---: |
+| [<img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v2.svg" width="100px;"/><br /><sub><b>Gemini</b></sub>]([https://gemini.google.com/](https://claude.ai/) |
+| :---: |
 | 🤖 (Yapay Zeka Yardımı) |
