@@ -44,7 +44,7 @@ Sistemi tamamen kablosuz, arka planda bağımsız çalışan ve daha kararlı bi
 
 Bu proje aşağıdaki teknolojiler ve araçlar yardımıyla geliştirilmiştir:
 
-| Araç | Rolü |
+| **Claude** | hata ayıklama (debugging) ve algoritma optimizasyonu |
 | :---: | :--- |
 | **Gemini** | Kod mimarisi, hata ayıklama (debugging) ve algoritma optimizasyonu |
 
