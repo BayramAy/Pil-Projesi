@@ -49,5 +49,6 @@ Bu proje aşağıdaki teknolojiler ve araçlar yardımıyla geliştirilmiştir:
 | **Gemini** | Kod mimarisi, hata ayıklama (debugging) ve algoritma optimizasyonu |
 
 <br>
-[![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](https://claude.ai/)
 [![Built with Gemini](https://img.shields.io/badge/Built%20with-Gemini-blue?style=for-the-badge&logo=google-gemini)](https://gemini.google.com/)
+<br>
+[![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-D97757?style=for-the-badge)](https://claude.ai/)
