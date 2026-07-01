@@ -49,7 +49,8 @@ Sistemi tamamen kablosuz, arka planda bağımsız çalışan ve daha kararlı bi
 ## 📋 Kurulum ve Çalıştırma (v2 Sürümü İçin)
 
 > 💡 **Not:** v2 sürümünde sistem çalışma esnasında ADB bağımlılığı barındırmaz. Ancak geliştirilen `.apk` dosyasını telefonunuza ilk defa yüklemek için bilgisayarınız üzerinden ADB terminalini kullanabilirsiniz.
-> 💡 Not:Eğer sunucunuza hiçbir bilgi düşmezse  ağınızı özel ağ olarak ayarlamayı deneyiniz.
+> <br>
+> 💡 **Not**: Eğer sunucunuza hiçbir bilgi düşmezse  ağınızı özel ağ olarak ayarlamayı deneyiniz.
 
 1. Telefonunuzda **Geliştirici Seçenekleri** içerisinden **USB Hata Ayıklama (USB Debugging)** modunu aktif hale getirin ve cihazı bilgisayarınıza bağlayın.
 2. Terminal (PowerShell / Komut İstemi) üzerinden aşağıdaki komutu kendi dosya yolunuza göre düzenleyerek çalıştırın ve uygulamanın yüklenmesini sağlayın:
