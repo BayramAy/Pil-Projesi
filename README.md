@@ -38,12 +38,16 @@ Sistemi tamamen kablosuz, arka planda bağımsız çalışan ve daha kararlı bi
 3. battery_monitor_adb.py dosyasını açarak WATCH_WIFI_IP ve PHONE_WIFI_IP değişkenlerine kendi cihazlarınızın IP adreslerini yazın.
 4. Projeyi çalıştırın:python battery_monitor_adb.py
 
-   Geliştirici
+  ## Geliştirici
    Bayram Ay- Elektronik-Elektrik Mühendisliği Öğrencisi
-## Katkıda Bulunanlar
+## 🛠️ Katkıda Bulunanlar (Contributors)
 
-| [<img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v2.svg" width="100px;"/><br /><sub><b>Gemini</b></sub>](https://gemini.google.com/) |
-| :---: |
-| [<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREWKDD4mTWVyCLvqZwuCkOMkzydSeKaMj_JCTTQLDC5A&s"/><br /><sub><b>Claude</b></sub>]([https://gemini.google.com/](https://claude.ai/) |
-| :---: |
-| 🤖 (Yapay Zeka Yardımı) |
+Bu proje aşağıdaki teknolojiler ve araçlar yardımıyla geliştirilmiştir:
+
+| Araç | Rolü |
+| :---: | :--- |
+| **Gemini** | Kod mimarisi, hata ayıklama (debugging) ve algoritma optimizasyonu |
+
+<br>
+
+[![Built with Gemini](https://img.shields.io/badge/Built%20with-Gemini-blue?style=for-the-badge&logo=google-gemini)](https://gemini.google.com/)
